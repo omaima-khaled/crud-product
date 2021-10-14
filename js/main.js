@@ -124,7 +124,7 @@ function updateItem(){
 
 ///////VALIDATION NAME///////
 nameInput.addEventListener('blur',function(){
-    var regex=/^[A-Z][a-z]{2,6}$/
+    var regex=/^[A-Z][a-z]{2,8}$/
     if(regex.test(nameInput.value)==true)
     { 
          submitBtn.removeAttribute("disabled");
@@ -184,7 +184,7 @@ categInput.addEventListener('blur',function(){
 })
 ///////////////////////VALIDATION DESCRIPTION////////////////
 descInput.addEventListener('blur',function(){
-    var regex=/\s{3}/
+    var regex=/.{10}/
     if(regex.test(descInput.value)==true)
     { 
          submitBtn.removeAttribute("disabled");
@@ -198,7 +198,7 @@ descInput.addEventListener('blur',function(){
         descInput.classList.add("is-invalid");
         descInput.classList.remove("is-valid");
         alertDesc.classList.remove("d-none");
-        alertDesc.innerHTML="description shoule be contain 3 spaces"
+        alertDesc.innerHTML="description shoule be contain at least 10 letters"
         return false;
     }
 })
