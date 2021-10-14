@@ -1,0 +1,26 @@
+textarea
+{
+    resize: none;
+}
+
+header {
+    height: 130px;
+    background-color: #2a8a85;
+    color: #fff;
+    font-size: 70px;
+}
+header i {margin-right: 10px;}
+.header-2 {
+background-color: rgba(0,255,0, 0.2);
+}
+.main-color{
+    color: #2a8a85;
+}
+.main-bg{
+  background-color: #2a8a85;
+}
+@media screen and (max-width: 992px) {
+    .tabledata {
+      width: fit-content;
+    }
+  }

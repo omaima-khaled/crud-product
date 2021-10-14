@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header id="to-top" class="text-center">
+        <i class="fab fa-cuttlefish"></i>
+        <i class="far fa-registered"></i>
+        <i class="fab fa-uniregistry"></i>
+        <i class="fab fa-dyalog"></i>
+      </header>
+      <div class="header-2 text-center">
+        <p class="m-0">Products Store</p>
+      </div>
+    <div class="w-75 mx-auto my-4">
+
+        <div class="mb-3">
+            <label for="productName">productName :</label>
+            <input class="form-control my-2" type="text" id="productName">
+            <span class="small text-muted">productName must start with uppercase </span>
+            <br>
+            <span id="alertName" class="alert-danger text-dark"></span>
+        </div>
+        <div class="mb-3">
+            <label for="productPrice">productPrice :</label>
+            <input class="form-control my-2" type="number" id="productPrice">
+            <span class="small text-muted">productName must start with uppercase </span>
+           <br> <span id="alertPrice" class="alert-danger text-dark"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="productCategory">productCategory :</label>
+            <input class="form-control my-2" type="text" id="productCategory">
+            <span class="small text-muted">productName must start with uppercase </span>
+           <br> <span id="alertCate" class="alert-danger text-dark"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="productDesc">productDesc :</label>
+            <textarea class="form-control my-2" type="text" id="productDesc"></textarea>
+            <span class="small text-muted">productName must start with uppercase </span>
+          <br>  <span id="alertDesc" class="alert-danger text-dark"></span>
+
+        </div>
+        <button  id='submitBtn' class="btn main-bg">add product</button>
+    </div>
+
+    <div class=" search mx-auto w-75">
+        <label for="searchProduct">searchProduct:</label>
+            <input onkeyup=" searchProduct(this.value)" class="form-control my-2 " type="text" id="searchProduct">
+        
+    </div>
+    <div class=" tabledata w-75 mx-auto">
+        <table class="table" >
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th> Category</th>
+                <th>Description</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tablebody">
+                
+            </tbody>
+        </table>
+
+
+      </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
